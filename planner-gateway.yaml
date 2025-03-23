@@ -5,8 +5,12 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
-      # routes:
-      #    - id: eureka-client
-      #      uri: lb://eureka-client
-      #      predicates:
-      #         - Path=/controller/**
+      routes:
+         - id: planner-todo-service
+           uri: lb://planner-todo-service
+           predicates:
+              - Path=/todo/**
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://localhost:8761/eureka"      

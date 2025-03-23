@@ -14,4 +14,4 @@ logging:
   pattern:
     console:  "[%thread] [${LOG_LEVEL_PATTERN:-%5p}] %clr(%logger){cyan} - {%msg}%n"
 
-someVar: 123
+someVar: 555

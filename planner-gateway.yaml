@@ -6,8 +6,8 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
-         - id: planner-todo-service
-           uri: lb://planner-todo-service
+         - id: task
+           uri: lb://task
            predicates:
               - Path=/todo/**
     

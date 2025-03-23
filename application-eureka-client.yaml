@@ -1,0 +1,8 @@
+eureka:
+  client:
+    register-with-eureka: true  # Если сервис должен регистрироваться
+    fetch-registry: true        # Если сервис должен получать информацию о других сервисах
+    service-url:
+      defaultZone: "http://localhost:8761/eureka"
+    instance:
+    instance-id: "${spring.application.name}:${random.int}"      

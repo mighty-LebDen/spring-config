@@ -1,0 +1,9 @@
+  datasource:
+    url: ${POSTGRES_URL}
+    password: ${POSTGRES_PASSWORD}
+    username: ${POSTGRES_USERNAME}
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
